@@ -1,0 +1,55 @@
+# InsightForge Backend Requirements (FIXED VERSIONS)
+# ======================================================
+
+# Core web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Authentication & Security - FIXED VERSIONS
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-dotenv==1.0.0
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+
+# Data Processing & Analysis
+pandas==1.5.3
+numpy==1.24.3
+scikit-learn==1.2.2
+
+# Pydantic for data validation - ADDED email-validator
+pydantic==2.5.0
+pydantic[email]==2.5.0  # This installs email-validator
+pydantic-settings==2.0.3
+email-validator==2.0.0   # Explicitly added
+
+# AI/ML - Google Gemini
+google-generativeai==0.3.0
+protobuf==3.20.3
+
+# Async file handling
+aiofiles==23.1.0
+
+# Caching & Queues
+redis==4.5.5
+celery==5.2.7
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+plotly==5.15.0
+
+# File handling & utilities
+python-magic-bin==0.4.14
+python-dateutil==2.8.2
+openpyxl==3.1.2
+
+# Additional utilities
+httpx==0.24.1
+pyyaml==6.0
+tzdata==2023.3

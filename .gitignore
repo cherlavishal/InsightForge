@@ -1,0 +1,163 @@
+# Dependencies
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+s3cmd/
+share/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/
+assets/uploaded/
+*.db
+*.sqlite3
+*.log
+logs/
+*.pkl
+*.pickle
+models/saved/
+
+# Environment variables
+.env
+backend/.env
+frontend/.env.local
+
+# Temporary files
+temp/
+tmp/
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Build outputs - Next.js
+.next/
+out/
+build/
+
+# Uploaded user data
+uploads/
+*.csv
+*.xlsx
+*.xls
+*.json
+
+# Coverage and test reports
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Temporary scripts
+clean_*.py
+emergency_*.py
+final_cleanup.py
+nuclear_clean.py
+reset_db.py
+test_auth_fixed.py
+test_insights.py
+test_insights_api.py
+test_upload.py
+test_api.ps1
+
+# Database seed (keep schema only, not seed data)
+database/seed_data.sql
+
+# NPM
+.npmrc
+package-lock.json
+
+# Python requirements (keep only if needed, usually committed)
+# requirements.txt is usually committed, but if it's generated, exclude it
+# requirements.txt
+
+# Misc
+*.ps1
+# Append the new entries to .gitignore
+cat >> .gitignore << 'EOF'
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Build outputs - Next.js
+.next/
+out/
+build/
+
+# Uploaded user data
+uploads/
+*.csv
+*.xlsx
+*.xls
+*.json
+
+# Coverage and test reports
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Temporary scripts
+clean_*.py
+emergency_*.py
+final_cleanup.py
+nuclear_clean.py
+reset_db.py
+test_auth_fixed.py
+test_insights.py
+test_insights_api.py
+test_upload.py
+test_api.ps1
+
+# Database seed (keep schema only, not seed data)
+database/seed_data.sql
+
+# NPM
+.npmrc
+package-lock.json
+
+# Misc
+*.ps1
+EOF
+
+# Verify the additions
+tail -20 .gitignore
